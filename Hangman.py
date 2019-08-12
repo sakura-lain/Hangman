@@ -15,7 +15,6 @@ def get_name():
         get_name()
     else:
         get_guess()
-get_name()
 
 import random
 words=["ironhack", "computer", "team", "beer", "weekend"]
@@ -48,8 +47,7 @@ def get_guess():
     if guesses_left<0:
         print('You lose! The secret word was', str(secret_word), '.\n' 'You are hung!')
     else:
-        print('Congratulations! You win! The secret word was',str(secret_word),'.') 
-get_guess()           
+        print('Congratulations! You win! The secret word was',str(secret_word),'.')            
 
 def update_dashes(secret, cur_dash, rec_guess):
     result = ""
@@ -59,3 +57,6 @@ def update_dashes(secret, cur_dash, rec_guess):
         else:
             result = result + cur_dash[i]
     return result
+
+get_name()
+get_guess()
